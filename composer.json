@@ -1,53 +1,53 @@
 {
-    "name": ":vendor_slug/:package_slug",
+    "name": "kikechic/novi-activitylog",
     "description": ":package_description",
     "keywords": [
-        ":vendor_name",
+        "Thomas Kikechi",
         "laravel",
-        ":package_slug"
+        "novi-activitylog"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/kikechic/novi-activitylog",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/kikechic/novi-activitylog/issues",
+        "source": "https://github.com/kikechic/novi-activitylog"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Thomas Kikechi",
+            "email": "kikechithomas@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.1",
-        "filament/filament": "^3.0",
-        "filament/forms": "^3.0",
-        "filament/tables": "^3.0",
-        "spatie/laravel-package-tools": "^1.15.0"
-    },
-    "require-dev": {
-        "laravel/pint": "^1.0",
-        "nunomaduro/collision": "^7.9",
-        "nunomaduro/larastan": "^2.0.1",
-        "orchestra/testbench": "^8.0",
-        "pestphp/pest": "^2.1",
-        "pestphp/pest-plugin-arch": "^2.0",
-        "pestphp/pest-plugin-laravel": "^2.0",
-        "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "spatie/laravel-ray": "^1.26"
-    },
+    "php": "^8.2", 
+    "filament/filament": "^4.0",
+    "filament/forms": "^4.0",
+    "filament/tables": "^4.0",
+    "spatie/laravel-package-tools": "^1.16"
+},
+   "require-dev": {
+    "laravel/pint": "^1.16",
+    "nunomaduro/collision": "^8.1",
+    "nunomaduro/larastan": "^2.9",
+    "orchestra/testbench": "^9.0",
+    "pestphp/pest": "^2.34",
+    "pestphp/pest-plugin-arch": "^2.8",
+    "pestphp/pest-plugin-laravel": "^2.3",
+    "phpstan/extension-installer": "^1.3",
+    "phpstan/phpstan-deprecation-rules": "^1.1",
+    "phpstan/phpstan-phpunit": "^1.4",
+    "spatie/laravel-ray": "^1.36"
+},
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Kikechic\\Activitylog\\": "src/",
+            "Kikechic\\Activitylog\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Kikechic\\Activitylog\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -67,10 +67,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Kikechic\\Activitylog\\ActivityLogServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Activitylog": "Kikechic\\Activitylog\\Facades\\Activitylog"
             }
         }
     },

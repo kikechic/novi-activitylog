@@ -1,6 +1,6 @@
 <?php
 
-// translations for VendorName/Skeleton
+// translations for Kikechic/activitylog
 return [
     //
 ];

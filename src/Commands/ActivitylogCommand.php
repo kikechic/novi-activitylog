@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Kikechic\Activitylog\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ActivityLogCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'novi:activitylog';
 
     public $description = 'My command';
 
